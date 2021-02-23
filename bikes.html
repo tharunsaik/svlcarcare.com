@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="assets/css/svl-global.css">
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="assets/css/flag.min.css">
+<link rel="stylesheet" href="assets/css/animated-headlines.css">
+<link rel="stylesheet" href="assets/css/hover-min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/css/back-to-top.css">
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/svl-styles.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<title>T-Pilots SVL</title>
+<link rel="icon" href="assets/img/fav.png" type="image/gif">
+</head>
+<body data-spy="scroll" data-target="#navbar-sub" data-offset="100" class="position-relative">
+<!--
+Sign Up Modal
+-->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<nav class="nav justify-content-center social-login a-mx-2 my-2">
+				<a href="#" class="nav-link rounded-circle bg-facebook text-white"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="nav-link rounded-circle bg-google text-white"><i class="fab fa-google"></i></a>
+				<a href="#" class="nav-link rounded-circle bg-grey-200"><i class="fab fa-apple"></i></a>
+				<a href="#" class="nav-link rounded-circle bg-amazon black"><i class="fab fa-amazon"></i></a>
+			</nav>
+			<p class="text-center text-muted">or Sign-Up with</p>
+			<form>
+				<div class="form-group">
+					<label for="" class="sr-only">Name</label>
+					<input type="text" class="form-control" id="" placeholder="Enter your Name">
+				</div>
+				<div class="form-group">
+					<label for="" class="sr-only">Enter Email or Phone Number</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email or Phone Number">
+				</div>
+				<div class="form-group font-size-1">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label text-muted" for="inlineCheckbox1">Tell me about SVL Updates</label>
+					</div>
+				</div>
+				<p class="font-size-2 text-muted">By signing up, I agree to SVL's <a href="#">Terms of Service, Privacy Policy, Guest Refund policy, and Host Guarantee Terms. Click Here</a></p>
+				<button type="submit" class="btn btn-primary btn-block">Send OTP</button>
+			</form>
+		  </div>
+			<div class="modal-footer text-center">
+				<p class="font-size-2">Already a SVL Member? <a href="#signup" data-toggle="modal" data-target="#signInModal" data-dismiss="modal">Sign-In</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+Sign In Modal
+-->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <nav class="nav justify-content-center social-login a-mx-2 my-2">
+			<a href="#" class="nav-link rounded-circle bg-facebook text-white"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" class="nav-link rounded-circle bg-google text-white"><i class="fab fa-google"></i></a>
+			<a href="#" class="nav-link rounded-circle bg-grey-200"><i class="fab fa-apple"></i></a>
+			<a href="#" class="nav-link rounded-circle bg-amazon black"><i class="fab fa-amazon"></i></a>
+		</nav>
+		<p class="text-center text-muted">or Sign-In with</p>
+		<form>
+			<div class="form-group">
+				<label for="" class="sr-only">Enter Email or Phone Number</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email or Phone Number">
+			</div>
+			<div class="form-group">
+				<label for="" class="sr-only">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+			</div>
+			<div class="form-group font-size-1">
+				<a href="#" class="float-right" data-toggle="modal" data-target="#forgotPassModal" data-dismiss="modal">Forgot password?</a>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">Remember me</label>
+				</div>
+			</div>
+			<a type="submit" class="btn btn-primary btn-block" href="dashboard.html">Submit</a>
+		</form>
+      </div>
+			<div class="modal-footer text-center">
+				<p class="font-size-2">Don't have an account? <a href="#" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Sign up</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+Forgot Password Modal
+-->
+<div class="modal fade" id="forgotPassModal" tabindex="-1" role="dialog" aria-labelledby="forgotPassModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forgotPassModalLabel">Forgot Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="" class="sr-only">Enter Email or Phone Number</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email or Phone Number">
+					</div>
+					<button type="submit" class="btn btn-primary btn-block">Send OTP</button>
+				</form>
+      </div>
+			<div class="modal-footer text-center">
+				<p class="font-size-2">Already a SVL Member? <a href="#" data-toggle="modal" data-target="#signInModal" data-dismiss="modal">Sign-In</a></p>
+			</div>
+    </div>
+  </div>
+</div>
+<!--
+Map Share
+-->
+<div class="modal fade" id="shareMapModal" tabindex="-1" role="dialog" aria-labelledby="shareMapModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+		<div class="modal-content rounded-0 border-2 border-primary">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="shareMapModalLabel">Sign In</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<nav class="nav justify-content-center social-login a-mx-2 my-2">
+						<a href="#" class="nav-link rounded-circle bg-facebook text-white"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="nav-link rounded-circle bg-google text-white"><i class="fab fa-google"></i></a>
+						<a href="#" class="nav-link rounded-circle bg-grey-200"><i class="fab fa-apple"></i></a>
+						<a href="#" class="nav-link rounded-circle bg-amazon black"><i class="fab fa-amazon"></i></a>
+					</nav>
+					<p class="text-center text-muted">or Sign-In with</p>
+					<form>
+						<div class="form-group">
+							<label for="" class="sr-only">Enter Email or Phone Number</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email or Phone Number">
+						</div>
+						<div class="form-group">
+							<label for="" class="sr-only">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+						</div>
+						<div class="form-group font-size-1">
+							<a href="#" class="float-right">Forgot password?</a>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+								<label class="form-check-label" for="inlineCheckbox1">Remember me</label>
+							</div>
+						</div>
+						<a type="submit" class="btn btn-primary btn-block" href="dashboard.html">Submit</a>
+					</form>
+		  </div>
+				<div class="modal-footer text-center">
+					<p class="font-size-2">Don't have an account? <a href="#">Sign up</a></p>
+				</div>
+		</div>
+	  </div>
+	</div>
+<!--
+Vehicle Details Modal
+-->
+<div class="modal fade" id="vehicleDetailsModal" tabindex="-1" role="dialog" aria-labelledby="vehicleDetailsModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+		<div class="modal-content rounded-0 border-2 border-primary">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="vehicleDetailsModalLabel">Vehicle Details</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  <div class="container my-5">
+					<div class="row">
+						<div class="col">
+							<h1 class="text-primary">SVL <span class="text-warning">City Taxi</span></h1>
+							<p><strong>Lorem ipsum dolor sit amet</strong></p>
+							<hr>
+							<p>Consectetur adipisicing elit. Minima veniam ipsa asperiores architecto</p>
+							<p><strong>•</strong>Nihil error Vero at ad. Facere a nihil vitae</p>
+							<p><strong>•</strong>Expedita temporibus sed aliquam</p>
+							<p><strong>•</strong>Quasi doloribus, iusto aut!</p>
+							<div class="tq">
+								<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
+								<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
+							</div>
+						</div>
+						<div class="col">
+							<img src="/assets/img/UberX.webp" alt="">
+						</div>
+					</div>
+				</div>
+      		</div>
+		</div>
+	</div>
+</div>
+<!--
+Header
+-->
+<!--
+Topbar
+-->
+<section class="bg-black top-bar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <nav class="nav nav-divided justify-content-center justify-content-sm-start a-py-2 a-px-2 a-px-sm-4">
+					<a href="#mail-us" class="nav-link" uk-scroll="offset:170;"><i class="fas fa-envelope"></i> Feedback</a>
+					<a href="#contact-us" class="nav-link" rel="PageScroll2id" data-ps2id-offset="20"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+				</nav>
+            </div>
+            <div class="col-sm-auto">
+                <nav class="nav nav-divided justify-content-center justify-content-sm-end a-py-2 a-px-4">
+					<a href="#" class="nav-link"><i class="fas fa-rupee-sign"></i></a>
+					<a href="#" class="nav-link"><i class="in flag"></i></a>
+					<a href="#" target="_blank" class="nav-link">Download Apps</a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-apple"></i></a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-android"></i></a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-youtube"></i></a>
+					<a href="http://blog.svlglobal.com/" target="_blank" class="nav-link">SVLG Blog</a>
+					<a href="#" class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign-Up</a>
+					<a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">Sign-In</a>
+				</nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+Navbar
+-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+			<img src="assets/img/svlcarcare.svg" alt="" width="150px">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarHome" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarHome">
+			<div class="navbar-nav ml-auto align-items-sm-center">
+				<a class="nav-item nav-link" href="index.html"><i class="fas fa-home"></i></a>
+				<a class="nav-item nav-link" href="bikes.html">Bikes</a>
+				<a class="nav-item nav-link" href="cars.html">Cars</a>
+				<a class="nav-item nav-link" href="finance.html">Finance</a>
+				<a class="nav-item nav-link" href="services.html">Services</a>
+				<a class="nav-item nav-link" href="subscriptions.html">Subscriptions</a>
+				<a class="btn btn-sm btn-primary rounded-pill shadow-sm mx-3 bg-orange-500-hover border-orange-500-hover" target="_blank" href="dealers.html">Dealers</a>
+				<div class="ml-2 mr-2 allServices" type="button">
+					<svg class="gb_Xe" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+				</div>
+				<div class="uk-width-large allServicesDropdown" uk-dropdown="mode: click; offset: 10">
+					<ul class="uk-nav uk-dropdown-nav text-center uk-grid-column-collapse uk-grid-row-small uk-child-width-1-5" uk-grid>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -290px;"></span>
+								<span class="services-text">Account</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -115px;"></span>
+								<span class="services-text">Search</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -874px;"></span>
+								<span class="services-text">Maps</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1222px;"></span>
+								<span class="services-text">YouTube</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -640px;"></span>
+								<span class="services-text">Play</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1862px;"></span>
+								<span class="services-text">News</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1802px;"></span>
+								<span class="services-text">Gmail</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -2212px;"></span>
+								<span class="services-text">Contacts</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 0;"></span>
+								<span class="services-text">Drive</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1513px;"></span>
+								<span class="services-text">Calendar</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1338px;"></span>
+								<span class="services-text">Translate</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1746px;"></span>
+								<span class="services-text">Photos</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -58px;"></span>
+								<span class="services-text">Shopping</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1047px;"></span>
+								<span class="services-text">Duo</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -290px;"></span>
+								<span class="services-text">Account</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- Breadcrumbs -->
+<section class="uk-section-default bg-grad-1">
+	<div class="uk-section py-1 pt-5 breadcrumbs uk-light uk-background-cover" style="background-image: url(assets/img/01.png)">
+		<div class="container">
+			<div class="row justify-content-center text-white text-center align-items-center">
+				<div class="col">
+					<small class="lead font-weight-bold mb-0">SBO Products</small>
+					<h1 class="font-weight-bold display-1 mt-n3">Bikes</h1>
+					<ul class="uk-breadcrumb justify-content-center">
+						<li><a href="#"><i class="fas fa-home pr-2"></i> Home</a></li>
+						<li><span>Bikes</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+<!--
+Why SVL Global
+-->
+<div class="container-fluid px-0">
+	<div class="row no-gutters">
+		<div class="col-sm-2">
+			<nav id="pagenav" class="position-sticky">
+				<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset: 56">
+					<li><a href="#Scooty">Scooty</a></li>
+					<li><a href="#RegularBikes">Regular Bikes</a></li>
+					<li><a href="#SportsBikes">Sports Bikes</a></li>
+					<li><a href="#CustomBikes">Custom Bikes</a></li>
+					<li><a href="#ElectricScooters">Electric Scooters</a></li>
+					<li><a href="#ElectricBikes">Electric Bikes</a></li>
+					<li><a href="#VintageBikes">Vintage Bikes</a></li>
+					<li><a href="#OtherBikes">Other Bikes</a></li>
+					<li><a href="#SellYourBike">Sell Your Bike</a></li>
+				</ul>
+				<a href="bikes.html" class="title-fancy -red ml-3 my-4">
+					<span class="btn-arrow"></span>
+					<span class="twp-read-more text">Customer Review</span>
+				</a>
+			</nav>
+		</div>
+		<main class="col border-left-2 overflow-hidden">
+			<section id="TaxiService" class="uk-section grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Taxi Service</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your Hotel tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-child-width-1-3@s uk-flex-center uk-text-center" uk-grid>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=1" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">City Taxi</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=2" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">Outstation</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=3" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">Rentals</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=4" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">Short Trips</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=5" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">Weekend Drive</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card uk-box-shadow-medium uk-card-hover mb-4 uk-inline-clip uk-transition-toggle" tabindex="0">
+								<div class="uk-inline">
+									<img src="https://picsum.photos/500/300?random=6" alt="">
+									<div class="uk-overlay bg-warning p-3 uk-position-bottom-left mb-n4 text-white px-4" style="border-bottom-right-radius: 2rem; border-top-right-radius: 2rem;">
+										<i class="fas fa-car fa-lg"></i>
+									</div>
+								</div>
+								<div class="card-body px-2 pb-2">
+									<h5 class="uk-margin-small-bottom uk-text-uppercase text-primary">Party Drive</h5>
+									<ul class="list-unstyled text-left icon-list icon-list-check">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+										<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+										<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+										<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+									</ul>
+									<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default">
+										<a href="#" class="btn btn-primary btn-fancy my-3">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Book Now</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			
+			<section id="BikeRide" class="uk-section uk-section-muted grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Bike Ride</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your Hotel tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-child-width-1-2 uk-text-justify" uk-grid>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/800/400?random=7" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Bike Ride</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/800/400?random=8" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Bike Rent</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="AutoBooking" class="uk-section grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Auto Booking</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your Hotel tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-child-width-1-2 uk-text-justify" uk-grid>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/800/400?random=9" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Auto</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/800/400?random=10" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">E-Rickshaw</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="TruckService" class="uk-section uk-section-muted grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Truck Service</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">We are present right where you need us and take care of all your logistics requirements. Our cost-effective solutions make us the right partner for your business, enterprise or for your household goods movement anywhere in Hyderabad.</em></p>
+				<div class="uk-child-width-1-3@s" uk-grid>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=13" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">General Goods</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-4">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=14" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Furniture</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=15" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Home Applicances</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="HolidayBooking" class="uk-section grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Holiday Booking</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis asperiores nisi libero laborum consequatur in optio eligendi ex at error quos reprehenderit illum, molestias natus ducimus, mollitia totam obcaecati odio.</em></p>
+				<div class="uk-child-width-1-2@m" uk-grid>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/800/300?random=11" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Holiday Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/800/300?random=12" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Holiday Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro distinctio.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1">
+						<div class="uk-card uk-card-default uk-card-body uk-card-small">
+							<div class="uk-child-width-expand uk-flex-middle" uk-grid>
+								<div class="uk-width-auto">
+									<img data-src="https://picsum.photos/450/350?random=12" alt="" uk-img>
+								</div>
+								<div>
+									<h3 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-4">Corporate Events</h3>
+									<ul class="list-unstyled text-left icon-list icon-list-check font-size-5 ul-">
+										<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+										<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+										<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+										<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+										<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+									</ul>
+									<div class="text-center uk-margin-small-left">
+										<a href="#" class="btn btn-primary btn-fancy">
+											<span class="btn-arrow"></span>
+											<span class="twp-read-more text">Schedule Holiday</span>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+			<section id="HotelBooking" class="uk-section uk-section-muted grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Hotel Booking</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your Hotel tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-child-width-1-3@s" uk-grid>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=13" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Hotel Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=14" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Hotel Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/500/300?random=15" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Hotel Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2">
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/800/300?random=16" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Corporate Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim labore enim</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim voluptatibus</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center py-3">
+									<a href="#" class="btn btn-primary btn-fancy my-5">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2">
+						<div class="uk-card uk-card-default uk-card-small uk-inline-clip uk-transition-toggle">
+							<div class="uk-card-media-top">
+								<img data-src="https://picsum.photos/800/300?random=17" width="" height="" alt="" uk-img>
+							</div>
+							<div class="uk-card-body px-2 pb-2">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Corporate Booking Title</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet dolor sit amet.</li>
+									<li class="orange-500-before">Veniam cupiditate numquam voluptas numquam voluptas.</li>
+									<li class="orange-500-before">architecto ullam, sapiente qui sapiente qui.</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim labore enim</li>
+									<li class="orange-500-before">distinctio voluptatibus labore enim voluptatibus</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center py-3">
+									<a href="#" class="btn btn-primary btn-fancy my-5">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="FlightTickets" class="uk-section grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Flight Tickets</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your Flight tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-card uk-card-default uk-card-body uk-card-small">
+					<div class="uk-child-width-expand uk-flex-middle" uk-grid>
+						<div class="uk-width-auto">
+							<img data-src="https://picsum.photos/450/350?random=12" alt="" uk-img>
+						</div>
+						<div>
+							<h3 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-4">Domestic/Internation Services</h3>
+							<ul class="list-unstyled text-left icon-list icon-list-check font-size-5 ul-">
+								<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+								<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+								<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+								<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+								<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+								<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+							</ul>
+							<div class="text-center uk-margin-small-left">
+								<a href="#" class="btn btn-primary btn-fancy">
+									<span class="btn-arrow"></span>
+									<span class="twp-read-more text">Search Flights</span>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			
+			<section id="TrainTickets" class="uk-section uk-section-muted grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Train Tickets</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your bus tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-card uk-card-default uk-card-body uk-card-small">
+					<div class="uk-child-width-expand uk-flex-middle" uk-grid>
+						<div>
+							<h3 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-4">Online Reservation</h3>
+							<ul class="list-unstyled text-left icon-list icon-list-check font-size-5 ul-">
+								<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+								<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+								<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+								<li class="orange-500-before">Debitis iste velit vitae dignissimos? Architecto.</li>
+								<li class="orange-500-before">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+								<li class="orange-500-before">Obcaecati magnam quas fuga enim cum, porro.</li>
+								<li class="orange-500-before">Aperiam molestias voluptatem maiores! Tempore.</li>
+							</ul>
+							<div class="text-center uk-margin-small-left">
+								<a href="#" class="btn btn-primary btn-fancy">
+									<span class="btn-arrow"></span>
+									<span class="twp-read-more text">Check Availability</span>
+								</a>
+							</div>
+						</div>
+						<div class="uk-width-auto">
+							<img data-src="https://picsum.photos/450/350?random=12" alt="" uk-img>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="BusTickets" class="uk-section grey-700 p-4 text-justify font-size-3">
+				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Bus Tickets</span></h2>
+				<p class="font-size-4 mb-4"><em class="text-dark">Now, book your bus tickets and make your bus booking experiance smoother and progressively resonable. We permit you to book tickets from any place in india at most reduced cost.</em></p>
+				<div class="uk-child-width-1-3 uk-text-justify mb-3" uk-grid>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/400/300?random=7" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Bus Tickets</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga cum.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/400/300?random=8" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Bus Rent</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga cum.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img data-src="https://picsum.photos/400/300?random=9" width="" height="" alt="" uk-img="">
+							<div class="uk-card uk-card-default uk-card-body uk-card-small uk-position-small px-2 pb-2 mt-n5">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">Caravans</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga cum.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae.</li>
+								</ul>
+								<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-background-default text-center">
+									<a href="#" class="btn btn-primary btn-fancy my-3">
+										<span class="btn-arrow"></span>
+										<span class="twp-read-more text">Book Now</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</main>
+	</div>
+</div>
+<!--
+Footer
+-->
+<a href="#" class="cd-top js-cd-top text-uppercase"><i class="fas fa-chevron-up"></i></a>
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
+<!--
+Nav Scroller
+-->
+<script src="assets/js/animated-headlines.js"></script> 
+<script src="assets/js/back-to-top.js"></script>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<script src="assets/js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<script src="assets/js/owl.carousel.min.js"></script> 
+<script>
+	$(document).ready(function(){
+    $('.domains-carousel').owlCarousel({
+		margin:10,
+		nav:true,
+		dots:false,
+		loop:true,
+		autoplayHoverPause:true,
+		autoplayTimeout: 5000,
+		responsive:{
+				0:{
+						items:1
+				},
+				600:{
+						items:3
+				},
+				1000:{
+						items:5
+				}
+        }
+    })
+		// Testimonials Carousel
+		$('.testimonials-carousel').owlCarousel({
+				margin:10,
+				dots:true,
+				autoplay:true,
+				loop:true,
+				autoplayHoverPause:true,
+				autoplayTimeout: 2600,
+				responsive:{
+						0:{
+								items:1
+						},
+						600:{
+								items:1
+						},
+						1000:{
+								items:1
+						}
+        }
+    })
+	});
+</script> 
+<script>
+$(window).scroll(function() {
+	if ($(".navbar").offset().top > 40) {
+		$(".navbar").addClass("shadow");
+		$(".navbar").addClass("navbarFixed");
+	} else {
+		$(".navbar").removeClass("shadow");
+		$(".navbar").removeClass("navbarFixed");
+	}   
+});
+</script>
+<script>
+	$(document).ready(function(){
+		$('.domain-link').hover(function(){
+				$(this).addClass('animated bounceIn');
+		});
+	});
+</script>
+<script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script> 
+<script>
+(function($){
+	$(window).on("load",function(){
+		$("a[rel='PageScroll2id']").mPageScroll2id();
+	});
+})(jQuery);
+</script>
+</body>
+</html>
