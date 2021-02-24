@@ -412,10 +412,9 @@ Sub Navbar
 		<div class="row travel-type-selector">
 			<div class="col-7 ml-4">
 				<div class="uk-grid-small uk-child-width-auto uk-grid mb-1">
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> City Ride</label>
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Airport</label>
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Outstation</label>
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Rentals</label>
+					Discover
+					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> Used Bikes</label>
+					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Used Cars</label>
 				</div>
 			</div>
 			<div class="col ml-4">
@@ -2094,5 +2093,16 @@ Nav Scroller
 -->
 <script src="assets/js/animated-headlines.js"></script> 
 <script src="assets/js/back-to-top.js"></script>
+<script>
+$(window).scroll(function() {
+	if ($(".navbar").offset().top > 40) {
+		$(".navbar").addClass("shadow");
+		$(".navbar").addClass("navbarFixed");
+	} else {
+		$(".navbar").removeClass("shadow");
+		$(".navbar").removeClass("navbarFixed");
+	}   
+});
+</script>
 </body>
 </html>
