@@ -5,8 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
-<link rel="stylesheet" href="assets/css/svl-global.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css"/>
 <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -16,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="assets/css/svl-global.css">
 <link rel="stylesheet" href="assets/css/flag.min.css">
 <link rel="stylesheet" href="assets/css/animated-headlines.css">
 <link rel="stylesheet" href="assets/css/hover-min.css">
@@ -422,112 +422,297 @@ Sub Navbar
 					Sell Your Vehicle
 					
 					Nearbuy Dealers
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2" checked> Ride Now</label>
-					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2"> Ride Later</label>
 				</div>
 			</div>
 		</div>
 
-		<form class="d-flex align-items-center booking-form">
-			<div class="px-0 flt-input gws-flights-form__input-container gws-flights__flex-box gws-flights-form__airport-input gws-flights-form__swapper-right">
-				<div class="gws-flights-form__location-text gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
-					<div class="uk-inline uk-width-1-1">
-						<a class="uk-form-icon" href="#">
-							<span class="gws-flights-form__location-icon gws-flights-form__origin-icon">
-								<span style="height:16px;line-height:16px;width:16px" class="z1asCe y6ox5">
-									<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-										<path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm10 6c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"></path>
-									</svg>
-								</span>
-							</span>
-						</a>
-						<input class="uk-input uk-form-large font-size-4 uk-border-rounded" type="text" placeholder="Hyderabad">
-					</div>
-				</div>
-				<div class="gws-flights-form__swapper-half-circle"></div>
-			</div>
-			<span class="gws-flights-form__swapper z1asCe lA8Tgb btn" button="button" tabindex="0">
-				<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path>
-				</svg>
-			</span>
-			<div class="px-0 d-flex flt-input gws-flights-form__input-container gws-flights__flex-box gws-flights-form__airport-input gws-flights-form__empty gws-flights-form__swapper-left" role="presentation">
-				<div class="gws-flights-form__location-text gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target gws-flights-form__empty">
-					<div class="uk-inline uk-width-1-1">
-						<a class="uk-form-icon text-primary pl-4" href="#">
-							<span class="gws-flights-form__location-icon">
-								<span class="z1asCe hzb2N">
-									<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-										<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
-									</svg>
-								</span>
-							</span>
-						</a>
-						<input class="uk-input uk-form-large font-size-4 uk-border-rounded" type="text" placeholder="Home" style="padding-left: 3.25rem !important">
-					</div>
-				</div>
-				<div class="gws-flights-form__swapper-half-circle"></div>
-			</div>
-			<div class="gws-flights-form__field-spacer"></div>
-			<div class="d-flex gws-flights-form__input-container gws-flights__flex-box gws-flights__flex-filler gws-flights-form__calendar-input flt-body2">
-				<div class="px-0 flt-input gws-flights__flex-box gws-flights__flex-filler gws-flights-form__departure-input gws-flights-form__round-trip">
-					<div class="gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
-						<div class="uk-inline uk-width-1-1">
-							<a class="uk-form-icon text-primary" href="#">
-								<span class="gws-flights-form__calendar-icon">
-									<span class="z1asCe zKp81c">
-										<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path></svg>
-									</span>
-								</span>
-							</a>
-							<input class="uk-input uk-form-large font-size-4 uk-border-rounded rounded-right-0" type="text" placeholder="Wed, 3 Jun" style="border-right-color: white">
-							<a class="uk-form-icon uk-form-icon-flip text-primary mr-3" href="#">
-								<div style="" class="gws-flights-form__flipper d-flex">
-									<span class="gws-flights-form__prev" aria-hidden="true" role="presentation" tabindex="-1">
-										<span class="z1asCe u3p1Tb">
-											<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
-											</svg>
-										</span>
-									</span>
-									<span class="gws-flights-form__next" aria-hidden="true" role="presentation" tabindex="-1">
-										<span class="z1asCe LV6CSb">
-											<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
-											</svg>
-										</span>
-									</span>
-								</div>
-							</a>
+		<form>
+			<div class="row">
+    			<div class="col">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100">
+					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+						<span class="mdc-notched-outline">
+						  <span class="mdc-notched-outline__leading"></span>
+						  <span class="mdc-notched-outline__notch">
+
+							<span id="outlined-select-label" class="mdc-floating-label">Select City</span>
+						  </span>
+						  <span class="mdc-notched-outline__trailing"></span>
+						</span>
+						  <i class="material-icons mdc-select__icon" tabindex="0" role="button">place</i>
+						<span class="mdc-select__selected-text-container">
+						  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+						</span>
+						<span class="mdc-select__dropdown-icon">
+						  <svg
+							  class="mdc-select__dropdown-icon-graphic"
+							  viewBox="7 10 10 5" focusable="false">
+							<polygon
+								class="mdc-select__dropdown-icon-inactive"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 10 12 15 17 10">
+							</polygon>
+							<polygon
+								class="mdc-select__dropdown-icon-active"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 15 12 10 17 15">
+							</polygon>
+						  </svg>
+						</span>
+
+					  </div>
+
+					  <!-- Other elements from the select remain. -->
+						<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+							<ul class="mdc-list">
+							  <li class="mdc-list-item" data-value="bangalore">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Bangalore</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="hyderabad">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Hyderabad</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="delhi">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Delhi</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="mumbai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Mumbai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="pune">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Pune</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="chennai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Chennai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="nagpur">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Nagpur</span>
+							  </li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="gws-flights-form__field-divider-wrapper">
-					<div class="gws-flights-form__field-divider" jstcache="0"></div>
-				</div>
-				<div class="flt-input gws-flights__flex-box gws-flights__flex-filler gws-flights-form__return-input" data-flt-ve="return_date" role="presentation">
-					<div class="gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
-						<div class="uk-inline uk-width-1-1">
-							<a class="uk-form-icon text-primary" href="#">
-								<i class="fas fa-clock fa-lg"></i>
-							</a>
-							<input class="uk-input uk-form-large font-size-4 uk-border-rounded rounded-left-0" type="text" placeholder="08:00 AM" style="border-left-color: white">
-							<a class="uk-form-icon uk-form-icon-flip text-primary mr-3" href="#">
-								<div style="" class="gws-flights-form__flipper d-flex">
-									<span class="gws-flights-form__prev" aria-hidden="true" role="presentation" tabindex="-1">
-										<span class="z1asCe u3p1Tb">
-											<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
-											</svg>
-										</span>
-									</span>
-									<span class="gws-flights-form__next" aria-hidden="true" role="presentation" tabindex="-1">
-										<span class="z1asCe LV6CSb">
-											<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
-											</svg>
-										</span>
-									</span>
-								</div>
-							</a>
+				<div class="col">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100">
+					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+						<span class="mdc-notched-outline">
+						  <span class="mdc-notched-outline__leading"></span>
+						  <span class="mdc-notched-outline__notch">
+
+							<span id="outlined-select-label" class="mdc-floating-label">Category</span>
+						  </span>
+						  <span class="mdc-notched-outline__trailing"></span>
+						</span>
+						  <i class="material-icons mdc-select__icon" tabindex="0" role="button">category</i>
+						<span class="mdc-select__selected-text-container">
+						  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+						</span>
+						<span class="mdc-select__dropdown-icon">
+						  <svg
+							  class="mdc-select__dropdown-icon-graphic"
+							  viewBox="7 10 10 5" focusable="false">
+							<polygon
+								class="mdc-select__dropdown-icon-inactive"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 10 12 15 17 10">
+							</polygon>
+							<polygon
+								class="mdc-select__dropdown-icon-active"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 15 12 10 17 15">
+							</polygon>
+						  </svg>
+						</span>
+
+					  </div>
+
+					  <!-- Other elements from the select remain. -->
+						<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+							<ul class="mdc-list">
+							  <li class="mdc-list-item" data-value="bangalore">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Bangalore</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="hyderabad">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Hyderabad</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="delhi">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Delhi</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="mumbai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Mumbai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="pune">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Pune</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="chennai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Chennai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="nagpur">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Nagpur</span>
+							  </li>
+							</ul>
 						</div>
 					</div>
+				</div>
+				<div class="col">
+					<div class="mdc-select mdc-select--outlined w-100">
+					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+						<span class="mdc-notched-outline">
+						  <span class="mdc-notched-outline__leading"></span>
+						  <span class="mdc-notched-outline__notch">
+
+							<span id="outlined-select-label" class="mdc-floating-label">Brand</span>
+						  </span>
+						  <span class="mdc-notched-outline__trailing"></span>
+						</span>
+						<span class="mdc-select__selected-text-container">
+						  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+						</span>
+						<span class="mdc-select__dropdown-icon">
+						  <svg
+							  class="mdc-select__dropdown-icon-graphic"
+							  viewBox="7 10 10 5" focusable="false">
+							<polygon
+								class="mdc-select__dropdown-icon-inactive"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 10 12 15 17 10">
+							</polygon>
+							<polygon
+								class="mdc-select__dropdown-icon-active"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 15 12 10 17 15">
+							</polygon>
+						  </svg>
+						</span>
+
+					  </div>
+
+					  <!-- Other elements from the select remain. -->
+						<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+							<ul class="mdc-list">
+							  <li class="mdc-list-item" data-value="bangalore">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Bangalore</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="hyderabad">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Hyderabad</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="delhi">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Delhi</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="mumbai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Mumbai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="pune">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Pune</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="chennai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Chennai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="nagpur">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Nagpur</span>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100">
+					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+						<span class="mdc-notched-outline">
+						  <span class="mdc-notched-outline__leading"></span>
+						  <span class="mdc-notched-outline__notch">
+
+							<span id="outlined-select-label" class="mdc-floating-label">Sort by</span>
+						  </span>
+						  <span class="mdc-notched-outline__trailing"></span>
+						</span>
+						  <i class="material-icons mdc-select__icon" tabindex="0" role="button">sort</i>
+						<span class="mdc-select__selected-text-container">
+						  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+						</span>
+						<span class="mdc-select__dropdown-icon">
+						  <svg
+							  class="mdc-select__dropdown-icon-graphic"
+							  viewBox="7 10 10 5" focusable="false">
+							<polygon
+								class="mdc-select__dropdown-icon-inactive"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 10 12 15 17 10">
+							</polygon>
+							<polygon
+								class="mdc-select__dropdown-icon-active"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 15 12 10 17 15">
+							</polygon>
+						  </svg>
+						</span>
+
+					  </div>
+
+					  <!-- Other elements from the select remain. -->
+						<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+							<ul class="mdc-list">
+							  <li class="mdc-list-item" data-value="bangalore">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Bangalore</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="hyderabad">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Hyderabad</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="delhi">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Delhi</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="mumbai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Mumbai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="pune">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Pune</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="chennai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Chennai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="nagpur">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Nagpur</span>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<button class="mdc-button mdc-button--raised">  <span class="mdc-button__ripple"></span> Learn More</button>
 				</div>
 			</div>
 		</form>
@@ -2091,6 +2276,25 @@ Footer
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script>
+
+	const textFields = document.querySelectorAll('.mdc-text-field');
+	for (const textField of textFields) {
+	  mdc.textField.MDCTextField.attachTo(textField);
+	}
+	
+	const selectedIndex = document.querySelectorAll('.mdc-select');
+	for (const select of selectedIndex) {
+	  mdc.select.MDCSelect.attachTo(select);
+	}
+	
+	const buttons = document.querySelectorAll('.mdc-button');
+	for (const button of buttons) {
+	  mdc.ripple.MDCRipple.attachTo(button);
+	}
+	
+</script>
 <!--
 Nav Scroller
 -->
