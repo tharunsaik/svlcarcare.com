@@ -168,10 +168,6 @@ Cover Navbar logo bg
 .navbarFixed{
   transition: 0.4s;
 }
-.navbarFixed img{
-  transition: 0.4s;
-  width: 75px;
-}
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
