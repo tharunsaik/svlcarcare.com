@@ -411,7 +411,40 @@ Sub Navbar
 	<div class="uk-inline uk-width-1-1 uk-card uk-card-default uk-card-body uk-card-small rounded-10 mt-n3">
 		<div class="row travel-type-selector">
 			<div class="col-7 ml-4">
-				<div class="uk-grid-small uk-child-width-auto uk-grid mb-1">
+				<div class="d-flex align-items-center">
+				Discover
+				<div class="mdc-chip-set mdc-chip-set--choice" role="grid" data-mdc-auto-init="MDCChipSet">
+				  <div class="mdc-chip" role="row">
+					<div class="mdc-chip__ripple"></div>
+					<span class="mdc-chip__checkmark" >
+					  <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+						<path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+							  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+					  </svg>
+					</span>
+					<span role="gridcell">
+					  <span role="checkbox" tabindex="0" aria-checked="false" class="mdc-chip__primary-action">
+						<span class="mdc-chip__text">Used Bikes</span>
+					  </span>
+					</span>
+				  </div>
+					<div class="mdc-chip" role="row">
+					<div class="mdc-chip__ripple"></div>
+					<span class="mdc-chip__checkmark" >
+					  <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+						<path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+							  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+					  </svg>
+					</span>
+					<span role="gridcell">
+					  <span role="checkbox" tabindex="0" aria-checked="false" class="mdc-chip__primary-action">
+						<span class="mdc-chip__text">Used Cars</span>
+					  </span>
+					</span>
+				  </div>
+				</div>
+					</div>
+				<div class="uk-grid-small uk-child-width-auto uk-grid mb-1 d-none">
 					Discover
 					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> Used Bikes</label>
 					<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Used Cars</label>
@@ -429,7 +462,7 @@ Sub Navbar
 		<form>
 			<div class="form-row justify-content-around" uk-height-match="target: .search-form">
     			<div class="col">
-					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
 					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 						<span class="mdc-notched-outline">
 						  <span class="mdc-notched-outline__leading"></span>
@@ -500,7 +533,7 @@ Sub Navbar
 					</div>
 				</div>
 				<div class="col">
-					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
 					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 						<span class="mdc-notched-outline">
 						  <span class="mdc-notched-outline__leading"></span>
@@ -571,7 +604,7 @@ Sub Navbar
 					</div>
 				</div>
 				<div class="col">
-					<div class="mdc-select mdc-select--outlined w-100">
+					<div class="mdc-select mdc-select--outlined w-100" data-mdc-auto-init="MDCSelect">
 					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 						<span class="mdc-notched-outline">
 						  <span class="mdc-notched-outline__leading"></span>
@@ -641,7 +674,7 @@ Sub Navbar
 					</div>
 				</div>
 				<div class="col">
-					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100">
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100" data-mdc-auto-init="MDCSelect">
 					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 						<span class="mdc-notched-outline">
 						  <span class="mdc-notched-outline__leading"></span>
@@ -712,7 +745,7 @@ Sub Navbar
 					</div>
 				</div>
 				<div class="col-auto">
-					<button class="mdc-button mdc-button--raised search-form">
+					<button class="mdc-button mdc-button--raised search-form" data-mdc-auto-init="MDCRipple">
 					<span class="mdc-button__ripple"></span>
 					<span class="mdc-button__label">Search</span>
 					<span class="mdc-button__touch"></span>
@@ -2281,23 +2314,11 @@ Footer
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-<script>
 
-	const textFields = document.querySelectorAll('.mdc-text-field');
-	for (const textField of textFields) {
-	  mdc.textField.MDCTextField.attachTo(textField);
-	}
-	
-	const selectedIndex = document.querySelectorAll('.mdc-select');
-	for (const select of selectedIndex) {
-	  mdc.select.MDCSelect.attachTo(select);
-	}
-	
-	const buttons = document.querySelectorAll('.mdc-button');
-	for (const button of buttons) {
-	  mdc.ripple.MDCRipple.attachTo(button);
-	}
-	
+
+<!-- at the bottom of the page -->
+<script type="text/javascript">
+  window.mdc.autoInit();
 </script>
 <!--
 Nav Scroller
