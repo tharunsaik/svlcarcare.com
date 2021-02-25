@@ -7,6 +7,12 @@ body{
 /*
 Topbar
 */
+.filter-form .mdc-select__anchor{
+	height: 40px;
+}
+/*
+Topbar
+*/
 .top-bar a{
 	font-size: .8rem;
 	color: #fff;
