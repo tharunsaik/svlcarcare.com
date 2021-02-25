@@ -939,7 +939,7 @@ Portfolio Start
             <div class="col-12 animated fadeIn">
 				<h1 class="heading text-center mb-5 position-relative">Portfolio</h1>
 				
-				<div uk-filter="target: .portfolio-filter">
+				<div uk-filter="target: .portfolio-filter; animation: slide">
 					<div class="btn-group mb-5 d-flex justify-content-between services-ctrl flex-wrap" role="group" aria-label="ServicesFilter">
 						<button type="button" class="btn btn-outline-secondary rounded-0" data-mixitup-control data-filter="all">All Services</button>
 						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".T-Pilots">Buy/Sell</button>
@@ -948,7 +948,7 @@ Portfolio Start
 						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".ProInsure">Services</button>
 						<button type="button" class="btn btn-outline-secondary rounded-0" data-mixitup-control data-filter=".PromoCare">Subscriptions</button>
 					</div>
-					<ul class="uk-subnav uk-subnav-pill">
+					<ul class="uk-subnav uk-subnav-pill filter-buttons">
 						<li class="uk-active" uk-filter-control><a href="#">All Services</a></li>
 						<li uk-filter-control="[data-type='Buy/Sell']"><a href="#">Buy/Sell</a></li>
 						<li uk-filter-control="[data-type='Dealers']"><a href="#">Dealers</a></li>
@@ -957,7 +957,7 @@ Portfolio Start
 						<li uk-filter-control="[data-type='Subscriptions']"><a href="#">Subscriptions</a></li>
 					</ul>
 
-					<ul class="portfolio-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid>
+					<ul class="portfolio-filter uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
 						<li data-type="Buy/Sell">
 							<div class="card border-0 shadow mb-4">
 															<a class="hover-effect" href="details.html">
