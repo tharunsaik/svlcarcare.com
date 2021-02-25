@@ -422,11 +422,11 @@ Why SVL Global
 		</div>
 		<main class="col border-left-2 overflow-hidden">
 			<!--Search Start-->
-			<div class="card card-body border-0 rounded-0 bg-light">
+			<div class="card card-body border-0 rounded-0 bg-light" uk-sticky="offset: 50">
 				<form>
-					<div class="form-row justify-content-around" uk-height-match="target: .search-form">
+					<div class="form-row justify-content-around" uk-height-match="target: .filter-form">
 						<div class="col">
-							<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
+							<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 filter-form" data-mdc-auto-init="MDCSelect">
 							  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 								<span class="mdc-notched-outline">
 								  <span class="mdc-notched-outline__leading"></span>
@@ -496,79 +496,9 @@ Why SVL Global
 								</div>
 							</div>
 						</div>
+						
 						<div class="col">
-							<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
-							  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
-								<span class="mdc-notched-outline">
-								  <span class="mdc-notched-outline__leading"></span>
-								  <span class="mdc-notched-outline__notch">
-
-									<span id="outlined-select-label" class="mdc-floating-label">Category</span>
-								  </span>
-								  <span class="mdc-notched-outline__trailing"></span>
-								</span>
-								  <i class="material-icons mdc-select__icon" tabindex="0" role="button">category</i>
-								<span class="mdc-select__selected-text-container">
-								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
-								</span>
-								<span class="mdc-select__dropdown-icon">
-								  <svg
-									  class="mdc-select__dropdown-icon-graphic"
-									  viewBox="7 10 10 5" focusable="false">
-									<polygon
-										class="mdc-select__dropdown-icon-inactive"
-										stroke="none"
-										fill-rule="evenodd"
-										points="7 10 12 15 17 10">
-									</polygon>
-									<polygon
-										class="mdc-select__dropdown-icon-active"
-										stroke="none"
-										fill-rule="evenodd"
-										points="7 15 12 10 17 15">
-									</polygon>
-								  </svg>
-								</span>
-
-							  </div>
-
-							  <!-- Other elements from the select remain. -->
-								<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
-									<ul class="mdc-list">
-									  <li class="mdc-list-item" data-value="bangalore">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Bangalore</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="hyderabad">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Hyderabad</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="delhi">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Delhi</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="mumbai">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Mumbai</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="pune">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Pune</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="chennai">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Chennai</span>
-									  </li>
-									  <li class="mdc-list-item" data-value="nagpur">
-										<span class="mdc-list-item__ripple"></span>
-										<span class="mdc-list-item__text">Nagpur</span>
-									  </li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="mdc-select mdc-select--outlined w-100" data-mdc-auto-init="MDCSelect">
+							<div class="mdc-select mdc-select--outlined w-100 filter-form" data-mdc-auto-init="MDCSelect">
 							  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 								<span class="mdc-notched-outline">
 								  <span class="mdc-notched-outline__leading"></span>
@@ -638,7 +568,77 @@ Why SVL Global
 							</div>
 						</div>
 						<div class="col">
-							<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100" data-mdc-auto-init="MDCSelect">
+							<div class="mdc-select mdc-select--outlined w-100 filter-form" data-mdc-auto-init="MDCSelect">
+							  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+								<span class="mdc-notched-outline">
+								  <span class="mdc-notched-outline__leading"></span>
+								  <span class="mdc-notched-outline__notch">
+
+									<span id="outlined-select-label" class="mdc-floating-label">Model</span>
+								  </span>
+								  <span class="mdc-notched-outline__trailing"></span>
+								</span>
+								<span class="mdc-select__selected-text-container">
+								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+								</span>
+								<span class="mdc-select__dropdown-icon">
+								  <svg
+									  class="mdc-select__dropdown-icon-graphic"
+									  viewBox="7 10 10 5" focusable="false">
+									<polygon
+										class="mdc-select__dropdown-icon-inactive"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 10 12 15 17 10">
+									</polygon>
+									<polygon
+										class="mdc-select__dropdown-icon-active"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 15 12 10 17 15">
+									</polygon>
+								  </svg>
+								</span>
+
+							  </div>
+
+							  <!-- Other elements from the select remain. -->
+								<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+									<ul class="mdc-list">
+									  <li class="mdc-list-item" data-value="bangalore">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Bangalore</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="hyderabad">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Hyderabad</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="delhi">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Delhi</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="mumbai">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Mumbai</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="pune">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Pune</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="chennai">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Chennai</span>
+									  </li>
+									  <li class="mdc-list-item" data-value="nagpur">
+										<span class="mdc-list-item__ripple"></span>
+										<span class="mdc-list-item__text">Nagpur</span>
+									  </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 filter-form" data-mdc-auto-init="MDCSelect">
 							  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
 								<span class="mdc-notched-outline">
 								  <span class="mdc-notched-outline__leading"></span>
@@ -709,7 +709,7 @@ Why SVL Global
 							</div>
 						</div>
 						<div class="col-auto">
-							<button class="mdc-button mdc-button--raised search-form" data-mdc-auto-init="MDCRipple">
+							<button class="mdc-button mdc-button--raised filter-form" data-mdc-auto-init="MDCRipple">
 							<span class="mdc-button__ripple"></span>
 							<span class="mdc-button__label">Filters</span>
 							<span class="mdc-button__touch"></span>
@@ -725,13 +725,29 @@ Why SVL Global
 					<div>
 						<div class="uk-card uk-card-hover uk-card-small">
 							<div class="uk-card-header">
-								<div class="uk-grid-small" uk-grid>
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
 									<div class="uk-width-auto">
 										<img class="uk-border-rounded" width="164" height="108" src="https://picsum.photos/164/108?random=1">
 									</div>
 									<div class="uk-width-expand">
-										<h5>Convenient pick up</h5>
-										<p class="uk-text-meta uk-margin-remove-top">From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every pocket</p>
+										<h5>Suzuki Gixxer SF FI ABS</h5>
+										
+										<div class="d-flex justify-content-between">
+											<ul class="list-unstyled mb-2 row row-cols-2">
+												<li class="col text-nowrap">2019 Model</li>
+												<li class="col text-nowrap">1,37,000 Kms</li>
+												<li class="col text-nowrap">Petrol</li>
+												<li class="col text-nowrap">AMT</li>
+											</ul>
+											<a href="" uk-icon="heart"></a>
+										</div>
+										<div class="d-flex align-items-center">
+											<h5 class="mb-0"><i class="fas fa-rupee-sign"></i> 90,000</h5>
+											<!-- Button trigger modal -->
+											<button type="button" class="btn btn-primary btn-sm ml-5 font-weight-bold" data-toggle="modal" data-target="#vehicleDetailsModal">
+												View Full Details
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
