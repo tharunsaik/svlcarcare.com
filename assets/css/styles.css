@@ -10,6 +10,57 @@ Topbar
 .filter-form .mdc-select__anchor{
 	height: 40px;
 }
+
+
+/*
+Vehicle Features
+*/
+.vehicle-features-list li {
+  position: relative;
+  padding-left: 2.5em; }
+
+.vehicle-features-list li::before {
+	left: 0em;
+	position: absolute;
+	text-align: center;
+	width: 2.5em;
+	line-height: inherit;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f00c";
+}
+
+.vehicle-features-list li.km::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f3fd";
+}
+.vehicle-features-list li.gas::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f52f";
+}
+.vehicle-features-list li.owner::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+.vehicle-features-list li.accident::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5e1";
+}
+.vehicle-features-list li.no::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0cb";
+}
+.vehicle-features-list li.date::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f783";
+}
+
 /*
 Topbar
 */
