@@ -192,26 +192,43 @@ Map Share
 	  </div>
 	</div>
 <!-- Vehicle Details Modal -->
-<div class="modal fade" id="vehicleDetailsModal" tabindex="-1" aria-labelledby="vehicleDetailsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="vehicleDetailsModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- This is the modal with the default close button -->
+<div id="vehicle-details-modal" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Suzuki Gixxer SF FI ABS</h2>
+		<div class="uk-child-width-expand uk-flex-middle" uk-grid>
+			<div class="uk-width-2-3">
+				<div class="uk-position-relative" uk-slideshow="animation: fade">
 
+					<ul class="uk-slideshow-items">
+						<li>
+							<img src="assets/img/Gixxer-01.jpg" alt="" uk-cover>
+						</li>
+						<li>
+							<img src="assets/img/Gixxer-02.jpg" alt="" uk-cover>
+						</li>
+						<li>
+							<img src="assets/img/Gixxer-03.jpg" alt="" uk-cover>
+						</li>
+					</ul>
+
+					<div class="uk-position-bottom-center uk-position-small">
+						<ul class="uk-thumbnav">
+							<li uk-slideshow-item="0"><a href="#"><img src="assets/img/Gixxer-01.jpg" width="100" alt=""></a></li>
+							<li uk-slideshow-item="1"><a href="#"><img src="assets/img/Gixxer-02.jpg" width="100" alt=""></a></li>
+							<li uk-slideshow-item="2"><a href="#"><img src="assets/img/Gixxer-03.jpg" width="100" alt=""></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nobis placeat aliquam maiores pariatur obcaecati impedit sit qui nemo aspernatur, facilis corporis libero. Ex nisi perspiciatis temporibus ratione deleniti soluta?
+			</div>
+		</div>
+    </div>
+</div>
 <!--
 Vehicle Details Modal
 -->
@@ -411,7 +428,7 @@ Why SVL Global
 		</div>
 		<main class="col border-left-2 overflow-hidden">
 			<!--Search Start-->
-			<div class="card card-body border-0 rounded-0 bg-light" uk-sticky="offset: 50; bottom: true">
+			<div class="card card-body border-0 rounded-0 bg-light" uk-sticky="offset: 66; bottom: true">
 				<form>
 					<div class="form-row justify-content-around" uk-height-match="target: .filter-form">
 						<div class="col">
@@ -730,7 +747,7 @@ Why SVL Global
 										<div class="d-flex mt-2 align-items-center">
 											<h5 class="mb-0"><i class="fas fa-rupee-sign"></i> 90,000</h5>
 											<!-- Button trigger modal -->
-											<button type="button" class="btn btn-primary btn-sm ml-5 font-weight-bold" data-toggle="modal" data-target="#vehicleDetailsModal">
+											<button type="button" class="btn btn-primary btn-sm ml-5 font-weight-bold" data-toggle="modal" uk-toggle="target: #vehicle-details-modal">
 												View Full Details
 											</button>
 										</div>
@@ -1172,16 +1189,5 @@ Nav Scroller
 -->
 <script src="assets/js/animated-headlines.js"></script> 
 <script src="assets/js/back-to-top.js"></script>
-<script>
-$(window).scroll(function() {
-	if ($(".navbar").offset().top > 40) {
-		$(".navbar").addClass("shadow");
-		$(".navbar").addClass("navbarFixed");
-	} else {
-		$(".navbar").removeClass("shadow");
-		$(".navbar").removeClass("navbarFixed");
-	}   
-});
-</script>
 </body>
 </html>
