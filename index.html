@@ -262,7 +262,8 @@ Topbar
 <!--
 Navbar
 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<div uk-sticky="sel-target: .navbar; cls-active: navbarFixed">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="index.html">
 			<img src="assets/img/sbo-products.svg" alt="" width="150px">
@@ -378,6 +379,7 @@ Navbar
 		</div>
 	</div>
 </nav>
+</div>
 <!--
 Main Banner
 -->
@@ -1918,25 +1920,11 @@ Footer Scripts
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="assets/js/animated-headlines.js"></script> 
+<script src="assets/js/back-to-top.js"></script>
 <!-- at the bottom of the page -->
 <script type="text/javascript">
   window.mdc.autoInit();
-</script>
-<!--
-Nav Scroller
--->
-<script src="assets/js/animated-headlines.js"></script> 
-<script src="assets/js/back-to-top.js"></script>
-<script>
-$(window).scroll(function() {
-	if ($(".navbar").offset().top > 40) {
-		$(".navbar").addClass("shadow");
-		$(".navbar").addClass("navbarFixed");
-	} else {
-		$(".navbar").removeClass("shadow");
-		$(".navbar").removeClass("navbarFixed");
-	}   
-});
 </script>
 </body>
 </html>
