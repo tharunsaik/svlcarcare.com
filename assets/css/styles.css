@@ -21,6 +21,14 @@ Filter form in inner pages
 .filter-form .mdc-select__anchor, .search-form .mdc-select__anchor{
 	height: 40px;
 }
+.mdc-select--outlined .mdc-select__anchor.mdc-notched-outline--upgraded .mdc-floating-label--float-above, .mdc-select--outlined .mdc-select__anchor .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+    -webkit-transform: translateY(-26.75px) scale(0.75);
+    transform: translateY(-26.75px) scale(0.75);
+}
+.mdc-select--outlined.mdc-select--with-leading-icon.mdc-notched-outline--upgraded .mdc-floating-label--float-above, .mdc-select--outlined.mdc-select--with-leading-icon .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+    -webkit-transform: translateY(-26.75px) translateX(-32px) scale(0.75);
+    transform: translateY(-26.75px) translateX(-32px) scale(0.75);
+}
 
 /*
 Portfolio Filter Buttons
