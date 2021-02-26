@@ -15,7 +15,7 @@ body{
 /*
 Filter form in inner pages
 */
-.filter-form .mdc-select__anchor{
+.filter-form .mdc-select__anchor, .search-form .mdc-select__anchor{
 	height: 40px;
 }
 
