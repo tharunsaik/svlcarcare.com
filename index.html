@@ -402,10 +402,10 @@ Main Banner
 				</div>
 			</div>
 			<div class="col ml-4">
-				<div class="uk-grid-small uk-child-width-auto uk-grid mb-2 pl-2">
-					<a href="#">Sell Your Vehicle</a>
-					<a href="#">Nearbuy Dealers</a>
-				</div>
+				<nav class="nav">
+					<a class="nav-item nav-link" href="#">Sell Your Vehicle</a>
+					<a class="nav-item nav-link" href="#">Nearbuy Dealers</a>
+				</nav>
 			</div>
 		</div>
 
@@ -942,15 +942,7 @@ Portfolio Start
 				<h1 class="heading text-center mb-5 position-relative">Portfolio</h1>
 				
 				<div uk-filter="target: .portfolio-filter; animation: slide">
-					<div class="btn-group mb-5 d-flex justify-content-between services-ctrl flex-wrap" role="group" aria-label="ServicesFilter">
-						<button type="button" class="btn btn-outline-secondary rounded-0" data-mixitup-control data-filter="all">All Services</button>
-						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".T-Pilots">Buy/Sell</button>
-						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".CarCare">Dealers</button>
-						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".RoadAssist">Finance</button>
-						<button type="button" class="btn btn-outline-secondary" data-mixitup-control data-filter=".ProInsure">Services</button>
-						<button type="button" class="btn btn-outline-secondary rounded-0" data-mixitup-control data-filter=".PromoCare">Subscriptions</button>
-					</div>
-					<ul class="uk-subnav uk-subnav-pill filter-buttons">
+					<ul class="uk-subnav uk-subnav-pill uk-flex-wrap-between filter-buttons justify-content-between">
 						<li class="uk-active" uk-filter-control><a href="#">All Services</a></li>
 						<li uk-filter-control="[data-type='Buy/Sell']"><a href="#">Buy/Sell</a></li>
 						<li uk-filter-control="[data-type='Dealers']"><a href="#">Dealers</a></li>
@@ -962,134 +954,148 @@ Portfolio Start
 					<ul class="portfolio-filter uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
 						<li data-type="Buy/Sell">
 							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=T-Pilots" alt="" class="card-img-top">
-															</a>
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Buy/Sell" alt="" class="card-img-top">
+								</a>
 								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Buy/Sell">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=T-Pilots" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Buy/Sell">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=T-Pilots" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Buy/Sell">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=T-Pilots" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Dealers">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Car+Care" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Dealers">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Car+Care" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Dealers">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Car+Care" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Dealers">
-							<div class="card border-0 shadow mb-4">
-															<a class="hover-effect" href="details.html">
-																<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Car+Care" alt="" class="card-img-top">
-															</a>
-								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-																<div>
-																	<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-																	<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-																</div>
-																<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-															</div>
-							</div>
-						</li>
-						<li data-type="Finance">
-							<div class="card border-0 shadow mb-4">
-											<a class="hover-effect" href="details.html">
-												<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Road+Assist" alt="" class="card-img-top">
-											</a>
-											<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-												<div>
-													<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-													<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-												</div>
-												<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-											</div>
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
 									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Buy/Sell">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Buy/Sell" alt="" class="card-img-top">
+								</a>
+								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Buy/Sell">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Buy/Sell" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Buy/Sell">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Buy/Sell" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Dealers">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Dealers" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Dealers">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Dealers" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Dealers">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Dealers" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Dealers">
+							<div class="card border-0 shadow mb-4">
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Dealers" alt="" class="card-img-top">
+								</a>
+	<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+								</div>
+							</div>
+						</li>
+						<li data-type="Finance">
+							<div class="card border-0 shadow mb-4">
+									<a class="hover-effect" href="details.html">
+										<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Finance" alt="" class="card-img-top">
+									</a>
+									<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+										<div>
+											<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+											<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+										</div>
+										<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+									</div>
+							</div>
+						</li>
+						<li data-type="Finance">
+							<div class="card border-0 shadow mb-4">
+									<a class="hover-effect" href="details.html">
+										<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Finance" alt="" class="card-img-top">
+									</a>
+									<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+										<div>
+											<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+											<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+										</div>
+										<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
+									</div>
+							</div>
 						</li>
 						<li data-type="Finance">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Road+Assist" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Finance" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1102,22 +1108,22 @@ Portfolio Start
 						</li>
 						<li data-type="Finance">
 							<div class="card border-0 shadow mb-4">
-										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Road+Assist" alt="" class="card-img-top">
-										</a>
-										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-											<div>
-												<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-												<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-											</div>
-											<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-										</div>
+								<a class="hover-effect" href="details.html">
+									<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Finance" alt="" class="card-img-top">
+								</a>
+								<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
+									<div>
+										<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
+										<p class="card-subtitle text-muted font-size-1">Subtitle</p>
+									</div>
+									<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
 								</div>
+							</div>
 						</li>
-						<li data-type="Finance">
+						<li data-type="Services">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Road+Assist" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Services" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1131,7 +1137,7 @@ Portfolio Start
 						<li data-type="Services">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Pro+Insure" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Services" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1145,7 +1151,7 @@ Portfolio Start
 						<li data-type="Services">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Pro+Insure" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Services" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1159,21 +1165,7 @@ Portfolio Start
 						<li data-type="Services">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Pro+Insure" alt="" class="card-img-top">
-										</a>
-										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
-											<div>
-												<h6 class="card-title feature-box-title mb-1 font-size-3 fweight-400">Service Title</h6>
-												<p class="card-subtitle text-muted font-size-1">Subtitle</p>
-											</div>
-											<a class="btn btn-light btn-sm font-size-1 text-uppercase" href="details.html" role="button" title="View Details">Select</a>
-										</div>
-								</div>
-						</li>
-						<li data-type="Services">
-							<div class="card border-0 shadow mb-4">
-										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Pro+Insure" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Services" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1187,7 +1179,7 @@ Portfolio Start
 						<li data-type="Subscriptions">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Promo+Care" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Subscriptions" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1201,7 +1193,7 @@ Portfolio Start
 						<li data-type="Subscriptions">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Promo+Care" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Subscriptions" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1215,7 +1207,7 @@ Portfolio Start
 						<li data-type="Subscriptions">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Promo+Care" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Subscriptions" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
@@ -1229,7 +1221,7 @@ Portfolio Start
 						<li data-type="Subscriptions">
 							<div class="card border-0 shadow mb-4">
 										<a class="hover-effect" href="details.html">
-											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Promo+Care" alt="" class="card-img-top">
+											<img src="https://via.placeholder.com/500x250/0674ed/ffffff?text=Subscriptions" alt="" class="card-img-top">
 										</a>
 										<div class="card-header bg-white border-bottom-0 d-flex align-items-start justify-content-between py-2">
 											<div>
