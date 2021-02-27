@@ -12,6 +12,12 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+#filters-modal .mdc-button{
+	height: 50px;
+	padding: 0 26px 0 26px;
+	font-size: 1.5rem;
+}
+
 /*
 Filter form in inner pages
 */

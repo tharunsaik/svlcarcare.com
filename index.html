@@ -197,16 +197,17 @@ Filters Modal
 <!-- This is the modal -->
 <div id="filters-modal" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <div class="row align-items-center travel-type-selector">
+		<button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="row align-items-center travel-type-selector mb-3">
 			<div class="col">
 				Discover
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> Used Bikes</label>
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2"> Used Cars</label>
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio3"> Other Vehicles</label>
+				<label class="font-size-2" for="UsedBikes"><input class="uk-radio" type="radio" name="filter-radio" id="UsedBikes" checked> Used Bikes</label>
+				<label class="font-size-2" for="UsedCars"><input class="uk-radio" type="radio" name="filter-radio" id="UsedCars"> Used Cars</label>
+				<label class="font-size-2" for="OtherVehicles"><input class="uk-radio" type="radio" name="filter-radio" id="OtherVehicles"> Other Vehicles</label>
 			</div>
 		</div>
 		<form>
-			<div class="uk-child-width-1-4 justify-content-around" uk-grid uk-height-match="target: .search-form">
+			<div class="uk-child-width-1-4 uk-grid-small justify-content-around" uk-grid uk-height-match="target: .search-form">
     			<div>
 					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
 					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
@@ -780,6 +781,77 @@ Filters Modal
 						  <span class="mdc-notched-outline__leading"></span>
 						  <span class="mdc-notched-outline__notch">
 
+							<span id="outlined-select-label" class="mdc-floating-label">Vehicle Age</span>
+						  </span>
+						  <span class="mdc-notched-outline__trailing"></span>
+						</span>
+						  <i class="material-icons mdc-select__icon" tabindex="0" role="button">sort</i>
+						<span class="mdc-select__selected-text-container">
+						  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+						</span>
+						<span class="mdc-select__dropdown-icon">
+						  <svg
+							  class="mdc-select__dropdown-icon-graphic"
+							  viewBox="7 10 10 5" focusable="false">
+							<polygon
+								class="mdc-select__dropdown-icon-inactive"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 10 12 15 17 10">
+							</polygon>
+							<polygon
+								class="mdc-select__dropdown-icon-active"
+								stroke="none"
+								fill-rule="evenodd"
+								points="7 15 12 10 17 15">
+							</polygon>
+						  </svg>
+						</span>
+
+					  </div>
+
+					  <!-- Other elements from the select remain. -->
+						<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+							<ul class="mdc-list">
+							  <li class="mdc-list-item" data-value="bangalore">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Bangalore</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="hyderabad">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Hyderabad</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="delhi">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Delhi</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="mumbai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Mumbai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="pune">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Pune</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="chennai">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Chennai</span>
+							  </li>
+							  <li class="mdc-list-item" data-value="nagpur">
+								<span class="mdc-list-item__ripple"></span>
+								<span class="mdc-list-item__text">Nagpur</span>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="mdc-select mdc-select--outlined mdc-select--with-leading-icon w-100 search-form" data-mdc-auto-init="MDCSelect">
+					  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+						<span class="mdc-notched-outline">
+						  <span class="mdc-notched-outline__leading"></span>
+						  <span class="mdc-notched-outline__notch">
+
 							<span id="outlined-select-label" class="mdc-floating-label">Condition</span>
 						  </span>
 						  <span class="mdc-notched-outline__trailing"></span>
@@ -1270,8 +1342,9 @@ Filters Modal
 						</div>
 					</div>
 				</div>
+				
 				<div class="col-12 text-center">
-					<button class="mdc-button mdc-button--raised search-form" data-mdc-auto-init="MDCRipple">
+					<button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">
 						<span class="mdc-button__ripple"></span>
 						<span class="mdc-button__label">Search</span>
 						<span class="mdc-button__touch"></span>
@@ -1450,9 +1523,9 @@ Main Banner
 		<div class="row align-items-center travel-type-selector">
 			<div class="col-7 ml-3">
 				Discover
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> Used Bikes</label>
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2"> Used Cars</label>
-				<label class="font-size-2"><input class="uk-radio" type="radio" name="radio3"> Other Vehicles</label>
+				<label class="font-size-2" for="UsedBikes"><input class="uk-radio" type="radio" name="filter-radio" id="UsedBikes" checked> Used Bikes</label>
+				<label class="font-size-2" for="UsedCars"><input class="uk-radio" type="radio" name="filter-radio" id="UsedCars"> Used Cars</label>
+				<label class="font-size-2" for="OtherVehicles"><input class="uk-radio" type="radio" name="filter-radio" id="OtherVehicles"> Other Vehicles</label>
 			</div>
 			<div class="col ml-4">
 				<nav class="nav">
